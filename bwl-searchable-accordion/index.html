@@ -157,26 +157,22 @@
                         <section id="plugin_installation">
                             <div class="page-header"><h3>Plugin Installation</h3><hr class="notop"></div>
 
-                            
                             <p>You must include the CSS Stylesheet in your page header. Make sure file paths are correct, 
                         check the 'index.html' file for an example:</p>
-            <pre class="prettyprint linenums lang-html prettyprinted">
-            &lt;link rel="stylesheet" type="text/css" href="YOUR_PATH_HERE/font-awesome.min.css" />
-            &lt;link rel="stylesheet" type="text/css" href="YOUR_PATH_HERE/animate.css" />
-            &lt;link rel="stylesheet" type="text/css" href="YOUR_PATH_HERE/styles.css" /></pre>
+<pre class="language-javascript"><code>&lt;link rel="stylesheet" type="text/css" href="YOUR_PATH_HERE/font-awesome.min.css" />
+&lt;link rel="stylesheet" type="text/css" href="YOUR_PATH_HERE/animate.css" />
+&lt;link rel="stylesheet" type="text/css" href="YOUR_PATH_HERE/styles.css" /></code></pre>
 
                     <p>You must include the JS files in your page footer before <b>body</b> tag end. 
                         Make sure to check your include <b>jquery.min.js</b> file before <b>jquery.bwlaccordion.min.js</b> file and file paths are correct, 
                         check the 'index.html' file for an example:</p>
-            <pre class="prettyprint linenums lang-html prettyprinted">
-            &lt;script type="text/javascript" src="js/jquery.min.js">&lt;/script>
-            &lt;script type="text/javascript" src="js/jquery.bwlaccordion.min.js">&lt;/script></pre>
+<pre class="language-javascript"><code>&lt;script type="text/javascript" src="js/jquery.min.js">&lt;/script>
+&lt;script type="text/javascript" src="js/jquery.bwlaccordion.min.js">&lt;/script></code></pre>
 
                     <p>To insert the accordion into your page, simply open the 'index.html' file in the color you would like, and copy the code <b>between</b> these tags:</p>
-            <pre class="prettyprint linenums lang-html prettyprinted">
-            &lt;!-- Start BWL Searchable Accordion -->
+<pre class="language-markup"><code>&lt;!-- Start BWL Searchable Accordion -->
 
-            &lt;!-- End BWL Searchable Accordion --></pre>
+&lt;!-- End BWL Searchable Accordion --></code></pre>
 
                         </section>
 
@@ -186,42 +182,41 @@
                             <p>This plugin comes with very simple HTML layout to create unlimited no of accordion rows. </p>
                             <p>Here is the general structure:</p>
 
-            <pre class="prettyprint linenums lang-html prettyprinted">
-            &lt;div class="bwl_acc_container" id="accordion_1">
-                &lt;div class="accordion_search_container">
-                    &lt;input type="text" class="accordion_search_input_box search_icon" value="" placeholder="Search ..."/>
-                    &lt;/div> &lt;!-- end .bwl_acc_container -->
+<pre class="language-markup"><code>&lt;div class="bwl_acc_container" id="accordion_1">
+    &lt;div class="accordion_search_container">
+        &lt;input type="text" class="accordion_search_input_box search_icon" value="" placeholder="Search ..."/>
+        &lt;/div> &lt;!-- end .bwl_acc_container -->
 
-            &lt;div class="search_result_container">&lt;/div> &lt;!-- end .search_result_container -->
+&lt;div class="search_result_container">&lt;/div> &lt;!-- end .search_result_container -->
 
-            &lt;section>
-                &lt;h2 class="acc_title_bar">&lt;a href="#">Accordion Title #1&lt;/a>&lt;/h2>
-                &lt;div class="acc_container">
-                    &lt;div class="block">
-                        accordion content for title 1
-                    &lt;/div>
-                &lt;/div>
-            &lt;/section>
+&lt;section>
+    &lt;h2 class="acc_title_bar">&lt;a href="#">Accordion Title #1&lt;/a>&lt;/h2>
+    &lt;div class="acc_container">
+        &lt;div class="block">
+            accordion content for title 1
+        &lt;/div>
+    &lt;/div>
+&lt;/section>
 
-            &lt;section>
-                &lt;h2 class="acc_title_bar">&lt;a href="#">Accordion Title #2&lt;/a>&lt;/h2>
-                &lt;div class="acc_container">
-                    &lt;div class="block">
-                        accordion content for title 2
-                    &lt;/div>
-                &lt;/div>
-            &lt;/section>
+&lt;section>
+    &lt;h2 class="acc_title_bar">&lt;a href="#">Accordion Title #2&lt;/a>&lt;/h2>
+    &lt;div class="acc_container">
+        &lt;div class="block">
+            accordion content for title 2
+        &lt;/div>
+    &lt;/div>
+&lt;/section>
 
-            &lt;section>
-                &lt;h2 class="acc_title_bar">&lt;a href="#">Accordion Title #3&lt;/a>&lt;/h2>
-                &lt;div class="acc_container">
-                    &lt;div class="block">
-                        accordion content for title 3
-                    &lt;/div>
-                &lt;/div>
-            &lt;/section>
+&lt;section>
+    &lt;h2 class="acc_title_bar">&lt;a href="#">Accordion Title #3&lt;/a>&lt;/h2>
+    &lt;div class="acc_container">
+        &lt;div class="block">
+            accordion content for title 3
+        &lt;/div>
+    &lt;/div>
+&lt;/section>
 
-            &lt;/div> &lt;!-- end .bwl_acc_container --></pre>
+&lt;/div> &lt;!-- end .bwl_acc_container --></code></pre>
 
                         </section>
 
@@ -232,124 +227,122 @@
                                 touching single line of code in plugin file. 
                                 Lets take a look at options:</p> 
 
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Default Options Setion.
-                
-            $.fn.bwlAccordion.config = {
-                search: true, // true/false
-                placeholder: 'Search .....', // You can write any thing as a placeholder text.
-                suggestion_box: false, // display a suggestion box.
-                sbox_title: 'Popular Searches:', // Add custom search box title.
-                sbox_keywords: 'FAQ,Purchase', // Add custom keywords for search box.
-                search_only_title: false, // Allow search only accordion title.
-                theme: 'default', // theme-red/theme-blue/theme-green/theme-orange/theme-yellow
-                title_bg: '#2c2c2c', // accordion heading background.
-                title_text_color: '#FFFFFF', // accordion heading text color.
-                nav_box_bg: '#B8B831', // accordion heading nagivation background.
-                title_active_bg: '#414141', // Active accordion bar heading background.
-                title_active_text_color: '#F0F0F0', // Active accordion heading tex color.
-                nav_active_box_bg: '#d0d051', // Active accordion heading nagivation background.
-                animation: 'fade', // flash/shake/tada/swing/wobble/pulse/flipx/faderight/fadeleft/slide/slideup/bounce/lightspeed/roll/rotate/fade/none
-                rtl: false,
-                msg_item_found: ' Item(s) Found !',
-                msg_no_result: 'Nothing Found !',
-                ctrl_btn: false, //Display expand all/ collapse all button.
-                toggle: false, //Turn it on, If you want to open only one section and keep other section collapsed.
-                closeall: true, // Closed all the section on initialization( Added in version 1.0.6),
-                item_opened: 0, // If cloase all false then only first item will be opened. Default: 0 (First Child). Set "all" to open all items.
-                nav_box: '', // cross/square/arrow/circle (default: cross)
-                nav_icon: '', // plus/angle/angle_double/angle_caret/angle_chevron (default: plus)
-                highlight_bg: "#FFFF80", // founded item background color
-                highlight_color: '#000000', // founded item text color.
-                pagination: false, // pagination status.
-                limit: 2, // item per page.,
-                query_string: false
-            };</pre>
+<pre class="language-javascript"><code>// Default Options Setion.                
+$.fn.bwlAccordion.config = {
+    search: true, // true/false
+    placeholder: 'Search .....', // You can write any thing as a placeholder text.
+    suggestion_box: false, // display a suggestion box.
+    sbox_title: 'Popular Searches:', // Add custom search box title.
+    sbox_keywords: 'FAQ,Purchase', // Add custom keywords for search box.
+    search_only_title: false, // Allow search only accordion title.
+    theme: 'default', // theme-red/theme-blue/theme-green/theme-orange/theme-yellow
+    title_bg: '#2c2c2c', // accordion heading background.
+    title_text_color: '#FFFFFF', // accordion heading text color.
+    nav_box_bg: '#B8B831', // accordion heading nagivation background.
+    title_active_bg: '#414141', // Active accordion bar heading background.
+    title_active_text_color: '#F0F0F0', // Active accordion heading tex color.
+    nav_active_box_bg: '#d0d051', // Active accordion heading nagivation background.
+    animation: 'fade', // flash/shake/tada/swing/wobble/pulse/flipx/faderight/fadeleft/slide/slideup/bounce/lightspeed/roll/rotate/fade/none
+    rtl: false,
+    msg_item_found: ' Item(s) Found !',
+    msg_no_result: 'Nothing Found !',
+    ctrl_btn: false, //Display expand all/ collapse all button.
+    toggle: false, //Turn it on, If you want to open only one section and keep other section collapsed.
+    closeall: true, // Closed all the section on initialization( Added in version 1.0.6),
+    item_opened: 0, // If cloase all false then only first item will be opened. Default: 0 (First Child). Set "all" to open all items.
+    nav_box: '', // cross/square/arrow/circle (default: cross)
+    nav_icon: '', // plus/angle/angle_double/angle_caret/angle_chevron (default: plus)
+    highlight_bg: "#FFFF80", // founded item background color
+    highlight_color: '#000000', // founded item text color.
+    pagination: false, // pagination status.
+    limit: 2, // item per page.,
+    query_string: false
+};</code></pre>
 
                             <h4>- Default Accordion Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Accordion with default settings.
-            $("#accordion_1").bwlAccordion();</pre>
+<pre class="language-javascript"><code>
+// Accordion with default settings.
+$("#accordion_1").bwlAccordion();</code></pre>
                             
                             <h4>- Search Only In Title Accordion Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Accordion Search Only In Accordion Title
-            $("#search_only_title_example").bwlAccordion({
-                search_only_title: true
-            });</pre>
+<pre class="language-javascript"><code>
+// Accordion Search Only In Accordion Title
+$("#search_only_title_example").bwlAccordion({
+    search_only_title: true
+});</code></pre>
                             
                             <h4>- Pagination Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Accordion with pagination.
-            $("#accordion_1").bwlAccordion({     
-                pagination: true,
-                limit: 4
-            });</pre>
+<pre class="language-javascript"><code>
+// Accordion with pagination.
+$("#accordion_1").bwlAccordion({     
+    pagination: true,
+    limit: 4
+});</code></pre>
                             
                             <h4>- Expand All/Collapse All Button Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Accordion with expand all/ collapse all button.
-            $("#accordion_1").bwlAccordion({     
-                ctrl_btn: true
-            });</pre>
+<pre class="language-javascript"><code>
+// Accordion with expand all/ collapse all button.
+$("#accordion_1").bwlAccordion({     
+    ctrl_btn: true
+});</code></pre>
                             
                             <h4>- Toggle Mode Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Accordion with toggle section.
-            $("#accordion_1").bwlAccordion({
-                toggle: true
-            }); </pre>
-                            
+<pre class="language-javascript"><code>
+// Accordion with toggle section.
+$("#accordion_1").bwlAccordion({
+    toggle: true
+}); </code></pre>
+                
                             <h4>- All Closed Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Accordion with all closed section.
-            $("#accordion_1").bwlAccordion({
-                closeall: true
-            }); </pre>
+<pre class="language-javascript"><code>
+// Accordion with all closed section.
+$("#accordion_1").bwlAccordion({
+    closeall: true
+}); </code></pre>
                             
                             <h4>- All Accordion Rows Opened Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Accordion with all opened section.
-            $("#accordion_1").bwlAccordion({
-                closeall: false,
-                item_opened: "all",
-                theme: 'theme-red'
-            });</pre>
+<pre class="language-javascript"><code>
+// Accordion with all opened section.
+$("#accordion_1").bwlAccordion({
+    closeall: false,
+    item_opened: "all",
+    theme: 'theme-red'
+});</code></pre>
 
                             <h4>- Opened Only Even Rows Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Accordion with opened only even rows.
-            $("#accordion_1").bwlAccordion({
-                closeall: false,
-                item_opened: "even",
-                theme: 'theme-blue'
-            });</pre>
+<pre class="language-javascript"><code>
+// Accordion with opened only even rows.
+$("#accordion_1").bwlAccordion({
+    closeall: false,
+    item_opened: "even",
+    theme: 'theme-blue'
+});</code></pre>
 
                             <h4>- Opened Only Odd Rows Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Accordion with opened only odd rows.
-            $("#accordion_1").bwlAccordion({
-                closeall: false,
-                item_opened: "odd",
-                theme: 'theme-yellow'
-            });</pre>
+<pre class="language-javascript"><code>
+// Accordion with opened only odd rows.
+$("#accordion_1").bwlAccordion({
+    closeall: false,
+    item_opened: "odd",
+    theme: 'theme-yellow'
+});</code></pre>
 
                             <h4>- Opened Only Custom (First and Fourth) Rows Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            // Accordion with opened only custom rows.
-            $("#accordion_1").bwlAccordion({
-                closeall: false,
-                item_opened: [0,3],
-                theme: 'theme-green'
-            }); </pre>
+<pre class="language-javascript"><code>
+// Accordion with opened only custom rows.
+$("#accordion_1").bwlAccordion({
+    closeall: false,
+    item_opened: [0,3],
+    theme: 'theme-green'
+}); </code></pre>
                             
                             <h4>- RTL Mode Example:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            $("#accordion_1").bwlAccordion({
-                rtl : true,
-                pagination: true, // pagination status.
-                limit: 2 // item per page.
-            });</pre>
+<pre class="language-javascript"><code>
+$("#accordion_1").bwlAccordion({
+    rtl : true,
+    pagination: true, // pagination status.
+    limit: 2 // item per page.
+});</code></pre>
 
                             <h4>- Example (Fade Animation Settings): </h4>
 
@@ -358,10 +351,10 @@
                                 flash/shake/tada/swing/wobble/pulse/flipx/faderight/fadeleft/slide/slideup/bounce/lightspeed/roll/rotate/fade/none
                             </p>
                             
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            $("#accordion_1").bwlAccordion({
-                animation: 'fade'
-            });</pre>
+<pre class="language-javascript"><code>
+$("#accordion_1").bwlAccordion({
+    animation: 'fade'
+});</code></pre>
 
                             <h4>- Example (Shake Animation With Red Theme):</h4>
                             <p>
@@ -369,76 +362,76 @@
                                 theme-red/theme-blue/theme-green/theme-orange/theme-yellow/theme-custom
                             </p>
                             
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            $("#accordion_1").bwlAccordion({
-                animation: 'shake', 
-                theme: 'theme-red'
-            });</pre>
+<pre class="language-javascript"><code>
+$("#accordion_1").bwlAccordion({
+    animation: 'shake', 
+    theme: 'theme-red'
+});</code></pre>
 
                             <h4>- Setup a Custom Theme Settings:</h4>
                             <p>You can set your own colors for accordion layout.</p>
                             
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            $("#accordion_1").bwlAccordion({
-                theme: 'custom',
-                title_bg: '#800080',
-                title_text_color: '#FFFFFF', // accordion heading text color
-                nav_box_bg: '#000000',  // accordion heading nagivation background
-                title_active_bg: '#800080', // Active accordion bar heading background
-                title_active_text_color: '#F0F0F0', // Active accordion heading tex color
-                nav_active_box_bg: '#2c2c2c', // Active accordion heading nagivation background
-            });</pre>
+<pre class="language-javascript"><code>
+$("#accordion_1").bwlAccordion({
+    theme: 'custom',
+    title_bg: '#800080',
+    title_text_color: '#FFFFFF', // accordion heading text color
+    nav_box_bg: '#000000',  // accordion heading nagivation background
+    title_active_bg: '#800080', // Active accordion bar heading background
+    title_active_text_color: '#F0F0F0', // Active accordion heading tex color
+    nav_active_box_bg: '#2c2c2c', // Active accordion heading nagivation background
+});</code></pre>
 
 
             <h4>- Search Box Custom Message Settings:</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            //Add Custom Message in search box place holder and search result.
-            $("#accordion_1").bwlAccordion({
-                placeholder: ' Add search box place holder text',
-                msg_item_found : ' Add message here for number of items found',
-                msg_no_result : ' Add message here for zero item found',
-            });</pre>
+<pre class="language-javascript"><code>
+//Add Custom Message in search box place holder and search result.
+$("#accordion_1").bwlAccordion({
+    placeholder: ' Add search box place holder text',
+    msg_item_found : ' Add message here for number of items found',
+    msg_no_result : ' Add message here for zero item found',
+});</code></pre>
 
                             
             <!--  End New Code -->
                             
             <h4>- Example ( Enable RTL Mode):</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            $("#accordion_1").bwlAccordion({
-                rtl : true
-            });</pre>
+<pre class="language-javascript"><code>
+$("#accordion_1").bwlAccordion({
+    rtl : true
+});</code></pre>
 
             <!-- Search Suggestion Box  -->
 
             <h4>- Example (Search Suggestion Box):</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            $("#default_accordion").bwlAccordion({
-                suggestion_box: true,
-                sbox_title : 'Trending KeyWords: ',
-                sbox_keywords: 'offer, exclusive, free, get, buy, package, accordion'
-            });</pre>
+<pre class="language-javascript"><code>
+$("#default_accordion").bwlAccordion({
+    suggestion_box: true,
+    sbox_title : 'Trending KeyWords: ',
+    sbox_keywords: 'offer, exclusive, free, get, buy, package, accordion'
+});</code></pre>
 
             <!-- Search Suggestion Box With Pagination  -->
 
             <h4>- Example (Search Suggestion Box With Pagination):</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
-            $("#pagination_example").bwlAccordion({     
-                suggestion_box: true,
-                sbox_title : 'Popular KeyWords: ',
-                sbox_keywords: 'offer, exclusive, free, get, buy, package, accordion',
-                query_string: true,
-                pagination: true,
-                limit: 4,
-                theme: 'theme-blue'
-            });</pre>
+<pre class="language-javascript"><code>
+$("#pagination_example").bwlAccordion({     
+    suggestion_box: true,
+    sbox_title : 'Popular KeyWords: ',
+    sbox_keywords: 'offer, exclusive, free, get, buy, package, accordion',
+    query_string: true,
+    pagination: true,
+    limit: 4,
+    theme: 'theme-blue'
+});</code></pre>
 
             <!-- Search Suggestion Box With Pagination  -->
 
             <h4>- Example (Enable Query String Support):</h4>
-            <pre class="prettyprint linenums lang-js prettyprinted">
+<pre class="language-javascript"><code>
             $("#query_string_accordion").bwlAccordion({
                 query_string: true
-            });</pre>
+            });</code></pre>
 
             <div>
             <h3>
@@ -473,38 +466,37 @@
                             <div class="page-header"><h3>CSS Files and Structure</h3><hr class="notop"></div>
                             <p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
 
-            <pre class="prettyprint linenums lang-html prettyprinted">
-            /*========================================================================*/
-            /*   TABLE OF CONTENT
-            /*========================================================================*/
-            /*
-            01. Accordion basic styles
-                01.1 Expand/Collapse box style.
-            02. Accordion search container
-            03. Accordion title bar & Themes 
-                03.1 Default theme(Olive)
-                03.2 Red theme 
-                03.3 Blue theme
-                03.4 Green theme
-                03.5 Orange theme
-                03.6 Yellow theme
-                03.7 Custom theme
-            04. Accordion content
-            05. Pagination styling
-            06. Custom nav box
-                06.1 Square 
-                06.2 Arrow
-                06.3 Crcile
-            07. Custom nav icon
-                07.1 Angle
-                07.2 Angle Double
-                07.3 Caret
-                07.4 chevron
-            08. RTL support
-            09. Responsive styling
-            */
-            /*========================================================================*/</pre>
-
+<pre class="language-stylesheet"><code>
+/*========================================================================*/
+/*   TABLE OF CONTENT
+/*========================================================================*/
+/*
+01. Accordion basic styles
+    01.1 Expand/Collapse box style.
+02. Accordion search container
+03. Accordion title bar & Themes 
+    03.1 Default theme(Olive)
+    03.2 Red theme 
+    03.3 Blue theme
+    03.4 Green theme
+    03.5 Orange theme
+    03.6 Yellow theme
+    03.7 Custom theme
+04. Accordion content
+05. Pagination styling
+06. Custom nav box
+    06.1 Square 
+    06.2 Arrow
+    06.3 Crcile
+07. Custom nav icon
+    07.1 Angle
+    07.2 Angle Double
+    07.3 Caret
+    07.4 chevron
+08. RTL support
+09. Responsive styling
+*/
+/*========================================================================*/</code></pre>
                         </section>
                         
                         <section id="less_files">
@@ -513,12 +505,12 @@
 
                             <p>I've included LESS files. You will get that files inside of <b>css</b> folder. Using this file you can easily customize theme colors. 
                                 Open "variables.less" file and you will see 5 Predefined color sets already added in that less file. Just change color scheme according to your taste and complie that less file.</p>
-            <pre class="prettyprint linenums lang-html prettyprinted">
-            @theme-red-title-bar-bg: #E31D1A;
-            @theme-blue-title-bar-bg: #2D9FD0;
-            @theme-green-title-bar-bg: #3F9F39;
-            @theme-orange-title-bar-bg: #FF9900;
-            @theme-yellow-title-bar-bg: #FFE140;</pre>
+<pre class="language-sass"><code>
+@theme-red-title-bar-bg: #E31D1A;
+@theme-blue-title-bar-bg: #2D9FD0;
+@theme-green-title-bar-bg: #3F9F39;
+@theme-orange-title-bar-bg: #FF9900;
+@theme-yellow-title-bar-bg: #FFE140;</code></pre>
 
                         </section>
 
@@ -635,7 +627,7 @@
                                   <li>Update styles/styles.css file.</li>
                                   <li>Update js/jquery.bwlaccordion.min.js and js/jquery.bwlaccordion.js files.</li>
                                 </ul>
-                                
+
                                 <div class="callout-block callout-info">
                                   <div class="icon-holder">
                                     <i class="fas fa-info-circle text-light"></i>
