@@ -4,248 +4,295 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="BWL Searchable Accordion jQuery Plugin Documentation">
 <meta name="author" content="Mahbub Alam Khan">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/all.min.css"/>
-<link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/styles.css"/></head><body class="body-green">
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/all.min.css" />
+<link rel="stylesheet" href="https://xenioushk.github.io/bwl-static-assets/doc-assets/css/styles.css" />
+</head>
 
-<div
-  class="page-wrapper">
+<body class="body-green">
 
-  <!-- ******Header****** -->
-  <header id="header" class="header">
-    <div class="container">
-      <div class="branding">
-        <h1 class="logo text-center">
-          <a href="index.html">
-            <span class="text-bold">BWL Searchable Accordion jQuery Plugin</span>
-          </a>
-        </h1>
-      </div>
-      <!--//branding-->
-    </div>
-    <!--//container-->
-  </header>
-  <!--//header-->
+  <div class="page-wrapper">
 
-  <div class="doc-wrapper">
-
-    <div class="container">
-
-      <div class="doc-body row">
-
-        <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
-          <div id="doc-nav" class="doc-nav">
-            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
-              <a class="nav-link scrollto" href="#documenter_cover">Start</a>
-              <a class="nav-link scrollto" href="#requirements">Overview & Requirements</a>
-              <a class="nav-link scrollto" href="#plugin_installation" title="Plugin Installation">Plugin Installation</a>
-              <a class="nav-link scrollto" href="#html_structure" title="HTML Structure">HTML Structure</a>
-              <a class="nav-link scrollto" href="#plugin_configuration" title="Plugin Configuration">Plugin Configuration</a>
-              <a class="nav-link scrollto" href="#css_structure" title="CSS Files and Structure">CSS Files and Structure</a>
-              <a class="nav-link scrollto" href="#less_files" title="LESS Files">LESS Files</a>
-              <a class="nav-link scrollto" href="#video_tutorials" title="Video Tutorials">Video Tutorials</a>
-              <a class="nav-link scrollto" href="#upgrade_notes" title="Upgrade Notes">Upgrade Notes</a>
-              <a class="nav-link scrollto" href="#changelog" title="Change Log">Change Log</a>
-              <a class="nav-link scrollto" href="#credits" title="Sources and Credits">Sources and Credits</a>
-              <a class="nav-link scrollto sub-menu-sign" href="#theme_template_section">More Template & Themes</a>
-              <nav class="doc-sub-menu nav flex-column">
-                <a class="nav-link scrollto" href="#wordpress_themes">WordPress Themes</a>
-                <a class="nav-link scrollto" href="#wordpress_plugins">WordPress Plugins</a>
-                <a class="nav-link scrollto" href="#html5_templates">HTML5 Templates</a>
-              </nav>
-            </nav>
-            <small>
-              <i>Doc Last Update:</i>
-              10/08/2018</small>
-          </div>
+    <!-- ******Header****** -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="branding">
+          <h1 class="logo text-center">
+            <a href="index.html">
+              <span class="text-bold">BWL Searchable Accordion jQuery Plugin</span>
+            </a>
+          </h1>
         </div>
-        <!--//doc-sidebar-->
+        <!-- branding-->
+      </div>
+      <!-- container-->
+    </header>
+    <!-- header-->
 
-        <div class="doc-content col-md-9 col-12 order-1">
+    <div class="doc-wrapper">
 
-          <div class="content-inner">
+      <div class="container">
 
-            <section id="documenter_cover">
+        <div class="doc-body row">
 
-              <h2 class="section-title">BWL Searchable Accordion jQuery Plugin</h2>
+          <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                <a class="nav-link scrollto" href="#documenter_cover">Start</a>
+                <a class="nav-link scrollto" href="#requirements">Overview & Requirements</a>
+                <a class="nav-link scrollto" href="#plugin_installation" title="Plugin Installation">Plugin
+                  Installation</a>
+                <a class="nav-link scrollto" href="#html_structure" title="HTML Structure">HTML Structure</a>
+                <a class="nav-link scrollto" href="#plugin_configuration" title="Plugin Configuration">Plugin
+                  Configuration</a>
+                <a class="nav-link scrollto" href="#css_structure" title="CSS Files and Structure">CSS Files and
+                  Structure</a>
+                <a class="nav-link scrollto" href="#scss_files" title="SCSS Files">SCSS Files</a>
+                <a class="nav-link scrollto" href="#video_tutorials" title="Video Tutorials">Video Tutorials</a>
+                <a class="nav-link scrollto" href="#upgrade_notes" title="Upgrade Notes">Upgrade Notes</a>
+                <a class="nav-link scrollto" href="#changelog" title="Change Log">Change Log</a>
+                <a class="nav-link scrollto" href="#credits" title="Sources and Credits">Sources and Credits</a>
+                <a class="nav-link scrollto sub-menu-sign" href="#theme_template_section">More Template & Themes</a>
+                <nav class="doc-sub-menu nav flex-column">
+                  <a class="nav-link scrollto" href="#wordpress_themes">WordPress Themes</a>
+                  <a class="nav-link scrollto" href="#wordpress_plugins">WordPress Plugins</a>
+                  <a class="nav-link scrollto" href="#html5_templates">HTML5 Templates</a>
+                </nav>
+              </nav>
+              <small>
+                <i>Doc Last Update:</i>
+                23/11/2018</small>
+            </div>
+          </div>
+          <!-- doc-sidebar-->
 
-              <ul class="square-list">
-                <li>
-                  <strong>Plugin Version:</strong>1.1.2</li>
-                <li>
-                  <strong>Last Update:</strong>02/10/2023</li>
-                <li>
-                  <strong>Create Date:</strong>
-                  06/07/2014</li>
-                <li>
-                  <strong>Web Site:
-                  </strong>
-                  <a href="https://bluewindlab.net/" target="_blank">https://bluewindlab.net</a>
-                </li>
-                <li>
-                  <strong>Premium Support:</strong>
-                  <a href="https://codecanyon.net/item/bwl-searchable-accordion-jquery-plugin/8184405/support/contact?ref=xenioushk" target="_blank">Send Message</a>
-                </li>
-                <li>
-                  <strong>Developed By:</strong>
-                  Md Mahbub Alam Khan
-                </li>
-                <li>
-                  <strong>Skype:
-                  </strong>
-                  bluewindlab</li>
+          <div class="doc-content col-md-9 col-12 order-1">
 
-              </ul>
-              <p>
-                If you like this plugin, please spare a minute to rate it.
-                <br/>
-                <a href="https://codecanyon.net/item/bwl-searchable-accordion-jquery-plugin/8184405" target="_blank">https://codecanyon.net/item/bwl-searchable-accordion-jquery-plugin/8184405</a>
-                <br/>
-                If you want any support, Please feel free to contact me via my profile page
-                <a href="https://codecanyon.net/user/xenioushk" target="_blank">https://codecanyon.net/user/xenioushk</a>.
-              </p>
-            </section>
+            <div class="content-inner">
 
-            <section id="requirements">
+              <section id="documenter_cover">
 
-              <div class="page-header">
-                <h3>Plugin Overview</h3><hr class="notop"></div>
+                <h2 class="section-title">BWL Searchable Accordion jQuery Plugin</h2>
 
-              <p>
-                BWL Searchable Accordion is A premium jQuery Plugin, which provides you the most quickest and convenient way to create a 
-                                                                                                                                                                                                                                responsive and animated accordions for your web site or web application with in couple of minutes.
-              </p>
+                <ul class="square-list">
+                  <li>
+                    <strong>Plugin Version:</strong>1.1.2
+                  </li>
+                  <li>
+                    <strong>Last Update:</strong>02/10/2023
+                  </li>
+                  <li>
+                    <strong>Create Date:</strong>
+                    06/07/2014
+                  </li>
+                  <li>
+                    <strong>Web Site:
+                    </strong>
+                    <a href="https://bluewindlab.net/" target="_blank">https://bluewindlab.net</a>
+                  </li>
+                  <li>
+                    <strong>Premium Support:</strong>
+                    <a href="https://codecanyon.net/item/bwl-searchable-accordion-jquery-plugin/8184405/support/contact?ref=xenioushk"
+                      target="_blank">Send Message</a>
+                  </li>
+                  <li>
+                    <strong>Developed By:</strong>
+                    Md Mahbub Alam Khan
+                  </li>
+                  <li>
+                    <strong>Skype:
+                    </strong>
+                    bluewindlab
+                  </li>
 
-              <p>
-                Unique
-                <strong>content search</strong>
-                feature of the Accordion plugin allows your user to find their required content very easily from a long 
-                                                                                                                                                                                                                                accordion lists. No need to check every single accordion item. Plugin also
-                <strong>highlight the search keywords</strong>
-                in to accordion matched contents and 
-                                                                                                                                                                                                                                it's provide the best user experience. Below the search box, You can also display
-                <strong>useful suggestion box</strong>
-                with 
-                                                                                                                                                                                                                                pre-defined keywords based on your accordion content. So, users can quickly get their answers.
-              </p>
+                </ul>
+                <p>
+                  If you like this plugin, please spare a minute to rate it.
+                  <br />
+                  <a href="https://codecanyon.net/item/bwl-searchable-accordion-jquery-plugin/8184405"
+                    target="_blank">https://codecanyon.net/item/bwl-searchable-accordion-jquery-plugin/8184405</a>
+                  <br />
+                  If you want any support, Please feel free to contact me via my profile page
+                  <a href="https://codecanyon.net/user/xenioushk"
+                    target="_blank">https://codecanyon.net/user/xenioushk</a>.
+                </p>
+              </section>
 
-              <p>
-                <strong>Pagination</strong>
-                of the Accordion rows is the most useful as well as powerful feature of this plugin. Traditional multi-level accordion needs 
-                                                                                                                                                                                                                                huge amount of HTML codes and will take too much time to manage accordion rows. Now, you can display a large number of accordion rows with a very
-                <strong>small space</strong>
-                of you site.
-                                                                                                                                                                                                                                No more extra code to manage accordion blocks.
-              </p>
+              <section id="requirements">
 
-              <p>
-                Plugin offers you the most flexible way to
-                <strong>customize theme</strong>
-                of accordion. In addition, Searchable accordion jQuery plugin comes with 6 pre-defined themes.
-                                                                                                                                                                                                                                Also, you have the full freedom to set your very own colors as accordion theme.
-                <strong>3+ stylish navigation box</strong>
-                and 4+ custom 
-                                                                                                                                                                                                                                navigation arrows gives the best looks your accordion content.
-              </p>
+                <div class="page-header">
+                  <h3>Plugin Overview</h3>
+                  <hr class="notop">
+                </div>
 
-              <p>
-                If you want to use Searhcable Accordion Plugin in a
-                <strong>RTL supported</strong>
-                site, then you just need to add a single line of code. Really ? 
-                                                                                                                                                                                                                                Rest of the things will be automatically handled by the plugin.
-              </p>
+                <p>
+                  BWL Searchable Accordion is A premium jQuery Plugin, which provides you the most quickest and
+                  convenient way to create a
+                  responsive and animated accordions for your web site or web application with in couple of minutes.
+                </p>
 
-              <p>Searchable Accordion jQuery plugin comes with well commented JavaScript code and
-                <strong>valid HTML5 markup</strong>.
-                                                                                                                                                                                                                                                        So that, you can easily customize code without any issue. Package also contain
-                <strong>LESS files</strong>, which allows you to 
-                                                                                                                                                                                                                                                        customize styles by just changing few lines of code. Lets take a look at the major features of Searchable accordion plugin-
-              </p>
+                <p>
+                  Unique
+                  <strong>content search</strong>
+                  feature of the Accordion plugin allows your user to find their required content very easily from a
+                  long
+                  accordion lists. No need to check every single accordion item. Plugin also
+                  <strong>highlight the search keywords</strong>
+                  in to accordion matched contents and
+                  it's provide the best user experience. Below the search box, You can also display
+                  <strong>useful suggestion box</strong>
+                  with
+                  pre-defined keywords based on your accordion content. So, users can quickly get their answers.
+                </p>
 
-              <h3>Features</h3>
-              <ul class="simple-list">
-                <li>
-                  - Smooth jQuery & CSS3 based Accordion.</li>
-                <li>
-                  - Unique search bar to find contents easily.</li>
-                <li>
-                  - Unlimited Accordions in a single page.</li>
-                <li>
-                  - 14+ Smooth Animation & Effects.</li>
-                <li>
-                  - 6 Stylish Predefined Accordion Theme.</li>
-                <li>
-                  - Less file included for easy CSS customization.</li>
-                <li>
-                  - Font Awesome.</li>
-                <li>
-                  - Google Fonts.</li>
-                <li>
-                  - Retina Ready.</li>
-                <li>
-                  - RTL Supported.</li>
-                <li>
-                  - Responsive Accordion.</li>
-                <li>
-                  - Quick installation and super easy to use.</li>
-                <li>
-                  - Cross Browser Supported.</li>
-                <li>
-                  - HTML Demo File.</li>
-                <li>
-                  - Valid  & Well  Commented Markup.</li>
-                <li>
-                  - Extensive Documentation.</li>
-                <li>
-                  - 6 Months Premium support & Free Lifetime Updates.</li>
-              </ul>
+                <p>
+                  <strong>Pagination</strong>
+                  of the Accordion rows is the most useful as well as powerful feature of this plugin. Traditional
+                  multi-level accordion needs
+                  huge amount of HTML codes and will take too much time to manage accordion rows. Now, you can display a
+                  large number of accordion rows with a very
+                  <strong>small space</strong>
+                  of you site.
+                  No more extra code to manage accordion blocks.
+                </p>
 
-              <h3>Accordion Output-</h3>
-              <p>
-                <img src="img/00_accordion_demo.png" alt="" style="max-width: 100%;"/>
-              </p>
-            </section>
+                <p>
+                  Plugin offers you the most flexible way to
+                  <strong>customize theme</strong>
+                  of accordion. In addition, Searchable accordion jQuery plugin comes with 6 pre-defined themes.
+                  Also, you have the full freedom to set your very own colors as accordion theme.
+                  <strong>3+ stylish navigation box</strong>
+                  and 4+ custom
+                  navigation arrows gives the best looks your accordion content.
+                </p>
 
-            <section id="plugin_installation">
-              <div class="page-header">
-                <h3>Plugin Installation</h3><hr class="notop"></div>
+                <p>
+                  If you want to use Searhcable Accordion Plugin in a
+                  <strong>RTL supported</strong>
+                  site, then you just need to add a single line of code. Really ?
+                  Rest of the things will be automatically handled by the plugin.
+                </p>
 
-              <p>You must include the CSS Stylesheet in your page header. Make sure file paths are correct, 
-                                                                                                                                                                                                                        check the 'index.html' file for an example:</p>
-              <pre class="language-javascript"><code>&lt;link rel="stylesheet" type="text/css" href="YOUR_PATH_HERE/font-awesome.min.css" />
-&lt;link rel="stylesheet" type="text/css" href="YOUR_PATH_HERE/animate.css" />
-&lt;link rel="stylesheet" type="text/css" href="YOUR_PATH_HERE/styles.css" /></code></pre>
+                <p>Searchable Accordion jQuery plugin comes with well commented JavaScript code and
+                  <strong>valid HTML5 markup</strong>.
+                  So that, you can easily customize code without any issue. Package also contain
+                  <strong>LESS files</strong>, which allows you to
+                  customize styles by just changing few lines of code. Lets take a look at the major features of
+                  Searchable accordion plugin-
+                </p>
 
-              <p>You must include the JS files in your page footer before
-                <b>body</b>
-                tag end. 
-                                                                                                                                                                                                                        Make sure to check your include
-                <b>jquery.min.js</b>
-                file before
-                <b>jquery.bwlaccordion.min.js</b>
-                file and file paths are correct, 
-                                                                                                                                                                                                                        check the 'index.html' file for an example:</p>
-              <pre class="language-javascript"><code>&lt;script type="text/javascript" src="js/jquery.min.js">&lt;/script>
-&lt;script type="text/javascript" src="js/jquery.bwlaccordion.min.js">&lt;/script></code></pre>
+                <h3>Features</h3>
+                <ul class="simple-list">
+                  <li>
+                    - Smooth jQuery & CSS3 based Accordion.</li>
+                  <li>
+                    - Unique search bar to find contents easily.</li>
+                  <li>
+                    - Unlimited Accordions in a single page.</li>
+                  <li>
+                    - 14+ Smooth Animation & Effects.</li>
+                  <li>
+                    - 6 Stylish Predefined Accordion Theme.</li>
+                  <li>
+                    - Less file included for easy CSS customization.</li>
+                  <li>
+                    - Font Awesome.</li>
+                  <li>
+                    - Google Fonts.</li>
+                  <li>
+                    - Retina Ready.</li>
+                  <li>
+                    - RTL Supported.</li>
+                  <li>
+                    - Responsive Accordion.</li>
+                  <li>
+                    - Quick installation and super easy to use.</li>
+                  <li>
+                    - Cross Browser Supported.</li>
+                  <li>
+                    - HTML Demo File.</li>
+                  <li>
+                    - Valid & Well Commented Markup.</li>
+                  <li>
+                    - Extensive Documentation.</li>
+                  <li>
+                    - 6 Months Premium support & Free Lifetime Updates.</li>
+                </ul>
 
-              <p>To insert the accordion into your page, simply open the 'index.html' file in the color you would like, and copy the code
-                <b>between</b>
-                these tags:</p>
-              <pre class="language-markup"><code>&lt;!-- Start BWL Searchable Accordion -->
+                <h3>Accordion Output-</h3>
+                <p>
+                  <img src="img/00_accordion_demo.png" alt="" style="max-width: 100%;" />
+                </p>
+              </section>
+
+              <section id="plugin_installation">
+                <div class="page-header">
+                  <h3>Plugin Installation</h3>
+                  <hr class="notop">
+                </div>
+                This is the plugin folder structure.
+                <pre class="language-markdown"><code>
+bwl_searchable_accordion_jquery_plugin/
+├─ assets/
+├─ lib/
+│ ├─ animate
+│ ├─ font-awesome
+│ ├─ fonts
+│ ├─ jquery
+├─ src/
+│ ├─ images
+│ ├─ js
+│ ├─ styles
+│ ├─ index.js
+├─ .gitignore
+├─ index.html
+├─ package.json
+├─ README.md
+                </code></pre>
+
+                <p>You must include the CSS Stylesheet in your page header. Make sure file paths are correct,
+                  check the 'index.html' file for an example:</p>
+                <pre class="language-javascript"><code>&lt;link rel="stylesheet" type="text/css" href="libs/font-awesome/font-awesome.min.css">
+&lt;link rel="stylesheet" type="text/css" href="libs/animate/animate.css">
+&lt;link rel="stylesheet" type="text/css" href="assets/bwlaccordion.css"></code></pre>
+
+                <p>You must include the JS files in your page footer before
+                  <b>body</b>
+                  tag end.
+                  Make sure to check your include
+                  <b>jquery.min.js</b>
+                  file before
+                  <b>jquery.bwlaccordion.min.js</b>
+                  file and file paths are correct,
+                  check the 'index.html' file for an example:
+                </p>
+                <pre class="language-javascript"><code>&lt;script type="text/javascript" src="libs/jquery/jquery.min.js">&lt;/script>
+&lt;script type="text/javascript" src="assets/jquery.bwlaccordion.min.js">&lt;/script></code></pre>
+
+                <p>To insert the accordion into your page, simply open the 'index.html' file in the color you would
+                  like, and copy the code
+                  <b>between</b>
+                  these tags:
+                </p>
+                <pre class="language-markup"><code>&lt;!-- Start BWL Searchable Accordion -->
 
 &lt;!-- End BWL Searchable Accordion --></code></pre>
 
-            </section>
+              </section>
 
-            <section id="html_structure">
-              <div class="page-header">
-                <h3>HTML Structure</h3><hr class="notop"></div>
+              <section id="html_structure">
+                <div class="page-header">
+                  <h3>HTML Structure</h3>
+                  <hr class="notop">
+                </div>
 
-              <p>This plugin comes with very simple HTML layout to create unlimited no of accordion rows.
-              </p>
-              <p>Here is the general structure:</p>
+                <p>This plugin comes with very simple HTML layout to create unlimited no of accordion rows.
+                </p>
+                <p>Here is the general structure:</p>
 
-              <pre class="language-markup"><code>&lt;div class="bwl_acc_container" id="accordion_1">
+                <pre class="language-markup"><code>&lt;div class="bwl_acc_container" id="accordion_1">
     &lt;div class="accordion_search_container">
         &lt;input type="text" class="accordion_search_input_box search_icon" value="" placeholder="Search ..."/>
         &lt;/div> &lt;!-- end .bwl_acc_container -->
@@ -281,17 +328,20 @@
 
 &lt;/div> &lt;!-- end .bwl_acc_container --></code></pre>
 
-            </section>
+              </section>
 
-            <section id="plugin_configuration">
-              <div class="page-header">
-                <h3>Plugin Configuration</h3><hr class="notop"></div>
+              <section id="plugin_configuration">
+                <div class="page-header">
+                  <h3>Plugin Configuration</h3>
+                  <hr class="notop">
+                </div>
 
-              <p>This plugin comes with extensive options that allow you to configure everything from your index.html file without 
-                                                                                                                                                                                                                                touching single line of code in plugin file. 
-                                                                                                                                                                                                                                Lets take a look at options:</p>
+                <p>This plugin comes with extensive options that allow you to configure everything from your index.html
+                  file without
+                  touching single line of code in plugin file.
+                  Lets take a look at options:</p>
 
-              <pre class="language-javascript"><code>// Default Options Setion.                
+                <pre class="language-javascript"><code>// Default Options Setion.                
 $.fn.bwlAccordion.config = {
     search: true, // true/false
     placeholder: 'Search .....', // You can write any thing as a placeholder text.
@@ -323,49 +373,49 @@ $.fn.bwlAccordion.config = {
     query_string: false
 };</code></pre>
 
-              <h4>- Default Accordion Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Default Accordion Example:</h4>
+                <pre class="language-javascript"><code>
 // Accordion with default settings.
 $("#accordion_1").bwlAccordion();</code></pre>
 
-              <h4>- Search Only In Title Accordion Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Search Only In Title Accordion Example:</h4>
+                <pre class="language-javascript"><code>
 // Accordion Search Only In Accordion Title
 $("#search_only_title_example").bwlAccordion({
     search_only_title: true
 });</code></pre>
 
-              <h4>- Pagination Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Pagination Example:</h4>
+                <pre class="language-javascript"><code>
 // Accordion with pagination.
 $("#accordion_1").bwlAccordion({     
     pagination: true,
     limit: 4
 });</code></pre>
 
-              <h4>- Expand All/Collapse All Button Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Expand All/Collapse All Button Example:</h4>
+                <pre class="language-javascript"><code>
 // Accordion with expand all/ collapse all button.
 $("#accordion_1").bwlAccordion({     
     ctrl_btn: true
 });</code></pre>
 
-              <h4>- Toggle Mode Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Toggle Mode Example:</h4>
+                <pre class="language-javascript"><code>
 // Accordion with toggle section.
 $("#accordion_1").bwlAccordion({
     toggle: true
 }); </code></pre>
 
-              <h4>- All Closed Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- All Closed Example:</h4>
+                <pre class="language-javascript"><code>
 // Accordion with all closed section.
 $("#accordion_1").bwlAccordion({
     closeall: true
 }); </code></pre>
 
-              <h4>- All Accordion Rows Opened Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- All Accordion Rows Opened Example:</h4>
+                <pre class="language-javascript"><code>
 // Accordion with all opened section.
 $("#accordion_1").bwlAccordion({
     closeall: false,
@@ -373,8 +423,8 @@ $("#accordion_1").bwlAccordion({
     theme: 'theme-red'
 });</code></pre>
 
-              <h4>- Opened Only Even Rows Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Opened Only Even Rows Example:</h4>
+                <pre class="language-javascript"><code>
 // Accordion with opened only even rows.
 $("#accordion_1").bwlAccordion({
     closeall: false,
@@ -382,8 +432,8 @@ $("#accordion_1").bwlAccordion({
     theme: 'theme-blue'
 });</code></pre>
 
-              <h4>- Opened Only Odd Rows Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Opened Only Odd Rows Example:</h4>
+                <pre class="language-javascript"><code>
 // Accordion with opened only odd rows.
 $("#accordion_1").bwlAccordion({
     closeall: false,
@@ -391,8 +441,8 @@ $("#accordion_1").bwlAccordion({
     theme: 'theme-yellow'
 });</code></pre>
 
-              <h4>- Opened Only Custom (First and Fourth) Rows Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Opened Only Custom (First and Fourth) Rows Example:</h4>
+                <pre class="language-javascript"><code>
 // Accordion with opened only custom rows.
 $("#accordion_1").bwlAccordion({
     closeall: false,
@@ -400,44 +450,44 @@ $("#accordion_1").bwlAccordion({
     theme: 'theme-green'
 }); </code></pre>
 
-              <h4>- RTL Mode Example:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- RTL Mode Example:</h4>
+                <pre class="language-javascript"><code>
 $("#accordion_1").bwlAccordion({
     rtl : true,
     pagination: true, // pagination status.
     limit: 2 // item per page.
 });</code></pre>
 
-              <h4>- Example (Fade Animation Settings):
-              </h4>
+                <h4>- Example (Fade Animation Settings):
+                </h4>
 
-              <p>
-                <strong>Available Animations:
-                </strong>
-                flash/shake/tada/swing/wobble/pulse/flipx/faderight/fadeleft/slide/slideup/bounce/lightspeed/roll/rotate/fade/none
-              </p>
+                <p>
+                  <strong>Available Animations:
+                  </strong>
+                  flash/shake/tada/swing/wobble/pulse/flipx/faderight/fadeleft/slide/slideup/bounce/lightspeed/roll/rotate/fade/none
+                </p>
 
-              <pre class="language-javascript"><code>
+                <pre class="language-javascript"><code>
 $("#accordion_1").bwlAccordion({
     animation: 'fade'
 });</code></pre>
 
-              <h4>- Example (Shake Animation With Red Theme):</h4>
-              <p>
-                <strong>Available Themes:</strong>
-                theme-red/theme-blue/theme-green/theme-orange/theme-yellow/theme-custom
-              </p>
+                <h4>- Example (Shake Animation With Red Theme):</h4>
+                <p>
+                  <strong>Available Themes:</strong>
+                  theme-red/theme-blue/theme-green/theme-orange/theme-yellow/theme-custom
+                </p>
 
-              <pre class="language-javascript"><code>
+                <pre class="language-javascript"><code>
 $("#accordion_1").bwlAccordion({
     animation: 'shake', 
     theme: 'theme-red'
 });</code></pre>
 
-              <h4>- Setup a Custom Theme Settings:</h4>
-              <p>You can set your own colors for accordion layout.</p>
+                <h4>- Setup a Custom Theme Settings:</h4>
+                <p>You can set your own colors for accordion layout.</p>
 
-              <pre class="language-javascript"><code>
+                <pre class="language-javascript"><code>
 $("#accordion_1").bwlAccordion({
     theme: 'custom',
     title_bg: '#800080',
@@ -449,8 +499,8 @@ $("#accordion_1").bwlAccordion({
 });</code></pre>
 
 
-              <h4>- Search Box Custom Message Settings:</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Search Box Custom Message Settings:</h4>
+                <pre class="language-javascript"><code>
 //Add Custom Message in search box place holder and search result.
 $("#accordion_1").bwlAccordion({
     placeholder: ' Add search box place holder text',
@@ -459,28 +509,28 @@ $("#accordion_1").bwlAccordion({
 });</code></pre>
 
 
-              <!--  End New Code -->
+                <!--  End New Code -->
 
-              <h4>- Example ( Enable RTL Mode):</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Example ( Enable RTL Mode):</h4>
+                <pre class="language-javascript"><code>
 $("#accordion_1").bwlAccordion({
     rtl : true
 });</code></pre>
 
-              <!-- Search Suggestion Box  -->
+                <!-- Search Suggestion Box  -->
 
-              <h4>- Example (Search Suggestion Box):</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Example (Search Suggestion Box):</h4>
+                <pre class="language-javascript"><code>
 $("#default_accordion").bwlAccordion({
     suggestion_box: true,
     sbox_title : 'Trending KeyWords: ',
     sbox_keywords: 'offer, exclusive, free, get, buy, package, accordion'
 });</code></pre>
 
-              <!-- Search Suggestion Box With Pagination  -->
+                <!-- Search Suggestion Box With Pagination  -->
 
-              <h4>- Example (Search Suggestion Box With Pagination):</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Example (Search Suggestion Box With Pagination):</h4>
+                <pre class="language-javascript"><code>
 $("#pagination_example").bwlAccordion({     
     suggestion_box: true,
     sbox_title : 'Popular KeyWords: ',
@@ -491,52 +541,57 @@ $("#pagination_example").bwlAccordion({
     theme: 'theme-blue'
 });</code></pre>
 
-              <!-- Search Suggestion Box With Pagination  -->
+                <!-- Search Suggestion Box With Pagination  -->
 
-              <h4>- Example (Enable Query String Support):</h4>
-              <pre class="language-javascript"><code>
+                <h4>- Example (Enable Query String Support):</h4>
+                <pre class="language-javascript"><code>
             $("#query_string_accordion").bwlAccordion({
                 query_string: true
             });</code></pre>
 
-              <div>
-                <h3>
-                  What is query string support does?
-                </h3>
+                <div>
+                  <h3>
+                    What is query string support does?
+                  </h3>
 
-                <p>
-                  Query string support feature allows you to share a link of your site with a query keyword. That means, now you can customize your accordion page URL and display
-                                                                                                                                                                                                                                    only specific accordion rows based on that keyword.
-                </p>
-                <p>
-                  For example- your accordion page URL is
-                  <strong>https://example.com/accordion-demo.html</strong>
-                  and you have added all your accordion contents in there. 
-                                                                                                                                                                                                                                        Now, you want to share that page link to your customer and when 
-                                                                                                                                                                                                                                        your customer visit that link then they will only view the accordion rows which contain
-                  <strong>'popular'</strong>
-                  word. To do this, you just need to add a new parameter in your URL like this-
-                  <strong>https://example.com/accordion-demo.html?query=popular</strong>
-                </p>
+                  <p>
+                    Query string support feature allows you to share a link of your site with a query keyword. That
+                    means, now you can customize your accordion page URL and display
+                    only specific accordion rows based on that keyword.
+                  </p>
+                  <p>
+                    For example- your accordion page URL is
+                    <strong>https://example.com/accordion-demo.html</strong>
+                    and you have added all your accordion contents in there.
+                    Now, you want to share that page link to your customer and when
+                    your customer visit that link then they will only view the accordion rows which contain
+                    <strong>'popular'</strong>
+                    word. To do this, you just need to add a new parameter in your URL like this-
+                    <strong>https://example.com/accordion-demo.html?query=popular</strong>
+                  </p>
 
-                <p class="video_help_box">
-                  <a href="https://www.youtube.com/watch?v=fQXKkCoZbB0" class="venobox" data-vbtype="video" data-autoplay="true">
-                    <img src="img/video_icon.jpg" alt="doc_img"/>
-                    <span>Watch Video Tutorial</span>
-                  </a>
-                </p>
+                  <p class="video_help_box">
+                    <a href="https://www.youtube.com/watch?v=fQXKkCoZbB0" class="venobox" data-vbtype="video"
+                      data-autoplay="true">
+                      <img src="img/video_icon.jpg" alt="doc_img" />
+                      <span>Watch Video Tutorial</span>
+                    </a>
+                  </p>
 
-              </div>
+                </div>
 
 
-            </section>
+              </section>
 
-            <section id="css_structure">
-              <div class="page-header">
-                <h3>CSS Files and Structure</h3><hr class="notop"></div>
-              <p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+              <section id="css_structure">
+                <div class="page-header">
+                  <h3>CSS Files and Structure</h3>
+                  <hr class="notop">
+                </div>
+                <p>If you would like to edit a specific section of the site, simply find the appropriate label in the
+                  CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
 
-              <pre class="language-stylesheet"><code>
+                <pre class="language-stylesheet"><code>
 /*========================================================================*/
 /*   TABLE OF CONTENT
 /*========================================================================*/
@@ -567,410 +622,436 @@ $("#pagination_example").bwlAccordion({
 09. Responsive styling
 */
 /*========================================================================*/</code></pre>
-            </section>
+              </section>
 
-            <section id="less_files">
+              <section id="scss_files">
 
-              <div class="page-header">
-                <h3>LESS Files</h3><hr class="notop"></div>
+                <div class="page-header">
+                  <h3>SCSS Files</h3>
+                  <hr class="notop">
+                </div>
 
-              <p>I've included LESS files. You will get that files inside of
-                <b>css</b>
-                folder. Using this file you can easily customize theme colors. 
-                                                                                                                                                                                                                                Open "variables.less" file and you will see 5 Predefined color sets already added in that less file. Just change color scheme according to your taste and complie that less file.</p>
-              <pre class="language-sass"><code>
-@theme-red-title-bar-bg: #E31D1A;
-@theme-blue-title-bar-bg: #2D9FD0;
-@theme-green-title-bar-bg: #3F9F39;
-@theme-orange-title-bar-bg: #FF9900;
-@theme-yellow-title-bar-bg: #FFE140;</code></pre>
-
-            </section>
-
-            <section id="video_tutorials">
-              <div class="page-header">
-                <h3>Video Tutorials</h3><hr class="notop"></div>
-
-              <ul>
-                <li><a href="https://www.youtube.com/watch?v=iJKK-A31se0" class="venobox" data-vbtype="video" data-autoplay="true">Add Custom Search Keywords In Suggestion Box</a></li>
-                <li><a href="https://www.youtube.com/watch?v=fQXKkCoZbB0" class="venobox" data-vbtype="video" data-autoplay="true">How Query String Works In Searchable Accordion</a></li>
-              </ul>
-
-            </section>
-
-            <section id="developer_notes" class="hidden">
-              <div class="page-header">
-                <h3>Class References For Developers:</h3><hr class="notop"></div>
-
-              <ul>
-                <li>
-                  <strong>Accordion Container:</strong>
-                  <code>.baf-faq-container{}</code>
-                </li>
-                <li>
-                  <strong>Accordion Label:</strong>
-                  <code>.baf-faq-container label{}</code>
-                </li>
-                <li>
-                  <strong>Accordion Content:</strong>
-                  <code>.baf-faq-container .baf_content{}</code>
-                </li>
-                <li>
-                  <strong>Accordion Search Box:</strong>
-                  <code>.bwl-faq-search-panel{}</code>
-                </li>
-                <li>
-                  <strong>Accordion External Form:</strong>
-                  <code>.bwl-faq-search-panel{}</code>
-                </li>
-              </ul>
-
-            </section>
-
-            <section id="trouble_shoot" class="hidden">
-              <div class="page-header">
-                <h3>FAQ/Troubleshoot</h3><hr class="notop"></div>
-
-              <!--  Question -->
-
-              <a href="#" class="doc_faq">
-                <strong>Ques:</strong>
-                Can plugin be used with WooCommerce?
-              </a>
-
-              <div class="custom-separator">
-                <strong>Answer:
-                </strong>Yes, plugin is compatible with WooCommerce.
-
-                <p>
-                  You just need to purchase "
-                  <a href="https://codecanyon.net/item/faq-tab-for-woocommerce-advanced-faq-addon/12509686?ref=xenioushk" target="_blank">FAQ Tab For WooCommerce ($15)</a>
-                  " addon to use FAQ plugin with WooCommerce. You can use your existing FAQs as WooCommerce product FAQ. 
-                                                                                                                                                                                                                                                            So, you don't need to create FAQ again for your product. It's super easy to use and very efficient.
+                <p>I've included SCSS files. You will get that files inside of
+                  <b>src/styles/</b>
+                  folder. Using this file you can easily customize theme colors.
+                  Open "base/_variables.scss" file and you will see 5 Predefined color sets already added in that less
+                  file.
+                  Just change color scheme according to your taste and complie that less file.
                 </p>
-              </div>
+                <pre class="language-sass"><code>
+$theme-red-title-bar-bg: #e31d1a;
+$theme-blue-title-bar-bg: #2d9fd0;
+$theme-green-title-bar-bg: #3f9f39;
+$theme-orange-title-bar-bg: #ff9900;
+$theme-yellow-title-bar-bg: #ffe140;</code></pre>
 
-              <!--  Question -->
+              </section>
 
-              <a href="#" class="doc_faq">
-                <strong>Ques:</strong>
-                Can I display category/topics description below the category ?
-              </a>
+              <section id="video_tutorials">
+                <div class="page-header">
+                  <h3>Video Tutorials</h3>
+                  <hr class="notop">
+                </div>
 
-              <div class="custom-separator">
-                <strong>Answer:
-                </strong>Yes, You can. Check
-                <a href="#display_cat_description">more details.</a>
-              </div>
+                <ul>
+                  <li><a href="https://www.youtube.com/watch?v=iJKK-A31se0" class="venobox" data-vbtype="video"
+                      data-autoplay="true">Add Custom Search Keywords In Suggestion Box</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=fQXKkCoZbB0" class="venobox" data-vbtype="video"
+                      data-autoplay="true">How Query String Works In Searchable Accordion</a></li>
+                </ul>
 
-              <!--  Question -->
+              </section>
 
-              <a href="#" class="doc_faq">
-                <strong>Ques:</strong>
-                How to display category/topics in vertical Tab ?
-              </a>
+              <section id="developer_notes" class="hidden">
+                <div class="page-header">
+                  <h3>Class References For Developers:</h3>
+                  <hr class="notop">
+                </div>
 
-              <div class="custom-separator">
-                <strong>Answer:
-                </strong>Check for
-                <a href="#vertical_tab">more details.</a>
-              </div>
+                <ul>
+                  <li>
+                    <strong>Accordion Container:</strong>
+                    <code>.baf-faq-container{}</code>
+                  </li>
+                  <li>
+                    <strong>Accordion Label:</strong>
+                    <code>.baf-faq-container label{}</code>
+                  </li>
+                  <li>
+                    <strong>Accordion Content:</strong>
+                    <code>.baf-faq-container .baf_content{}</code>
+                  </li>
+                  <li>
+                    <strong>Accordion Search Box:</strong>
+                    <code>.bwl-faq-search-panel{}</code>
+                  </li>
+                  <li>
+                    <strong>Accordion External Form:</strong>
+                    <code>.bwl-faq-search-panel{}</code>
+                  </li>
+                </ul>
 
-              <!--  Question -->
+              </section>
 
-              <a href="#" class="doc_faq">
-                <strong>Ques:</strong>
-                Is it possible for FAQ toggle to close automatically if user opens another one?
-              </a>
+              <section id="trouble_shoot" class="hidden">
+                <div class="page-header">
+                  <h3>FAQ/Troubleshoot</h3>
+                  <hr class="notop">
+                </div>
 
-              <div class="custom-separator">
+                <!--  Question -->
 
-                <div>
+                <a href="#" class="doc_faq">
+                  <strong>Ques:</strong>
+                  Can plugin be used with WooCommerce?
+                </a>
+
+                <div class="custom-separator">
+                  <strong>Answer:
+                  </strong>Yes, plugin is compatible with WooCommerce.
+
+                  <p>
+                    You just need to purchase "
+                    <a href="https://codecanyon.net/item/faq-tab-for-woocommerce-advanced-faq-addon/12509686?ref=xenioushk"
+                      target="_blank">FAQ Tab For WooCommerce ($15)</a>
+                    " addon to use FAQ plugin with WooCommerce. You can use your existing FAQs as WooCommerce product
+                    FAQ.
+                    So, you don't need to create FAQ again for your product. It's super easy to use and very efficient.
+                  </p>
+                </div>
+
+                <!--  Question -->
+
+                <a href="#" class="doc_faq">
+                  <strong>Ques:</strong>
+                  Can I display category/topics description below the category ?
+                </a>
+
+                <div class="custom-separator">
+                  <strong>Answer:
+                  </strong>Yes, You can. Check
+                  <a href="#display_cat_description">more details.</a>
+                </div>
+
+                <!--  Question -->
+
+                <a href="#" class="doc_faq">
+                  <strong>Ques:</strong>
+                  How to display category/topics in vertical Tab ?
+                </a>
+
+                <div class="custom-separator">
+                  <strong>Answer:
+                  </strong>Check for
+                  <a href="#vertical_tab">more details.</a>
+                </div>
+
+                <!--  Question -->
+
+                <a href="#" class="doc_faq">
+                  <strong>Ques:</strong>
+                  Is it possible for FAQ toggle to close automatically if user opens another one?
+                </a>
+
+                <div class="custom-separator">
+
+                  <div>
+                    <strong>Answer:
+                    </strong>
+                    Yes, it’s possible.
+                    <ul>
+                      <li>Go to FAQ Settings>Reading Settings section.</li>
+                      <li>From ‘Collapsible Accordion: ’ drop down list, please select ‘Show All FAQ Answer Closed’
+                        option and save your new settings.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    Check following image-
+                    <br />
+                    <a href="https://prntscr.com/6yksi1" target="_blank">https://prntscr.com/6yksi1</a>
+                  </div>
+
+                </div>
+
+                <!--  Question -->
+                <a href="#" class="doc_faq">
+                  <strong>Ques:</strong>
+                  Does search box work in mobile device?
+                </a>
+                <div class="custom-separator">
                   <strong>Answer:
                   </strong>
-                  Yes, it’s possible.
-                  <ul>
-                    <li>Go to FAQ Settings>Reading Settings section.</li>
-                    <li>From ‘Collapsible Accordion: ’ drop down list, please select ‘Show All FAQ Answer Closed’ option and save your new settings.</li>
-                  </ul>
+                  Yes, plugin search box support and work pretty well in mobile devices.
+
+                  Search box has clear ( X ) button, so you can easily clear search field text with out pressing back
+                  button of your phone.
+                </div>
+
+
+              </section>
+
+              <section id="upgrade_notes" class="doc-section">
+                <h2 class="section-title">Upgrade Notes</h2>
+
+                <div class="row">
+
+                  <div class="col-md-12 col-12">
+                    <p>
+                      <b>Upgrading to 1.1.5</b>
+                    </p>
+                    <ul class="square-list">
+                      <li>Update assets/bwlaccordion.css file.</li>
+                      <li>Update assets/jquery.bwlaccordion.js files.</li>
+                    </ul>
+
+                    <div class="callout-block callout-info">
+                      <div class="icon-holder">
+                        <i class="fas fa-info-circle text-light"></i>
+                      </div>
+                      <!-- icon-holder-->
+                      <div class="content text-light">
+                        <h4 class="callout-title text-light">Important Note:</h4>
+                        <p>If you modified any files of plugin, please take a backup before update all files and folder.
+                        </p>
+                      </div>
+                      <!-- content-->
+                    </div>
+                    <!-- callout-block-->
+                  </div>
+
+                </div>
+
+
+              </section>
+
+              <section id="changelog">
+                <div class="page-header">
+                  <h3>Change Log</h3>
+                  <hr class="notop">
                 </div>
 
                 <div>
-                  Check following image-
-                  <br/>
-                  <a href="https://prntscr.com/6yksi1" target="_blank">https://prntscr.com/6yksi1</a>
-                </div>
 
-              </div>
-
-              <!--  Question -->
-              <a href="#" class="doc_faq">
-                <strong>Ques:</strong>
-                Does search box work in mobile device?
-              </a>
-              <div class="custom-separator">
-                <strong>Answer:
-                </strong>
-                Yes, plugin search box support and work pretty well in mobile devices.
-                                                                                                                                                                                                
-                                                                                                                                                                                                                                Search box has clear ( X ) button, so you can easily clear search field text with out pressing back button of your phone.
-              </div>
-
-
-            </section>
-
-            <section id="upgrade_notes" class="doc-section">
-              <h2 class="section-title">Upgrade Notes</h2>
-
-              <div class="row">
-
-                <div class="col-md-12 col-12">
+                  <b>2023, October 02 - v 1.1.4</b>
+                  <br />
                   <p>
-                    <b>Upgrading to 1.1.4</b>
+                    - Improved Plugin code.<br />
+                    - Updated Documentation.
                   </p>
-                  <ul class="square-list">
-                    <li>Update styles/styles.css file.</li>
-                    <li>Update js/jquery.bwlaccordion.min.js and js/jquery.bwlaccordion.js files.</li>
-                  </ul>
 
-                  <div class="callout-block callout-info">
-                    <div class="icon-holder">
-                      <i class="fas fa-info-circle text-light"></i>
+                  <b>August 10, 2018 - v 1.1.1</b>
+                  <br />
+                  <p>
+                    - Added option to search only accordion title.<br />
+                    - Added option to display suggestion box bottom of search box.<br />
+                    - Added option to query string search.<br />
+                    - Improved Plugin code.<br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>March 11, 2018 - v 1.1.0</b>
+                  <br />
+                  <p>
+                    - Added option to keep open all rows of accordion.<br />
+                    - Added option to keep open only even rows of accordion.<br />
+                    - Added option to keep open only odd rows of accordion.<br />
+                    - Added option to keep open custom rows of accordion.<br />
+                    - Improved Plugin code.<br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>January 05, 2018 - v 1.0.9</b>
+                  <br />
+                  <p>
+                    - Improved Plugin code.<br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>May 21, 2016 - v 1.0.8</b>
+                  <br />
+                  <p>
+                    - Fixed pagination box background issue.<br />
+                    - Fixed custom theme issue for multiple accordion in a page.
+                    <br />
+                    - Improved Plugin code.<br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>May 19, 2016 - v 1.0.7</b>
+                  <br />
+                  <p>
+                    - Fixed search results counter issue.<br />
+                    - Improved responsive layout.
+                    <br />
+                    - Added custom theme setup option.
+                    <br />
+                    - Improved Plugin code.<br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>January 30, 2016 - v 1.0.6</b>
+                  <br />
+                  <p>
+                    - Added Expand all/ Collapse All Button.
+                    <br />
+                    - Added All closed accordion feature.
+                    <br />
+                    - Added 3 new navigation box type.
+                    <br />
+                    - Added 4 new navigation icon type.
+                    <br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>
+                    May 5, 2015 - v 1.0.5</b>
+                  <br />
+                  <p>
+                    - Fixed live search text
+                    <strong>Highlight Coloring</strong>
+                    issue for Chrome/Safari/Opera Browswer.
+                    <br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>
+                    April 26, 2015 - v 1.0.4</b>
+                  <br />
+                  <p>
+                    - Fixed live search issue for link(anchor) tag.
+                    <br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>
+                    March 22, 2015 - v 1.0.3</b>
+                  <br />
+                  <p>
+                    - Added Pagination Support for long lists of Accordion contents.
+                    <br />
+                    - Added Easy clear button for small screen.<br />
+                    - Updated Font Awesome stylesheet.<br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>
+                    October 16, 2014 - v 1.0.2</b>
+                  <br />
+                  <p>
+                    - Added Highlight search keyword both accordion heading and content.
+                    <br />
+                    - Added Custom highlight background and font color feature.
+                    <br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>
+                    July 18, 2014 - v 1.0.1</b>
+                  <br />
+                  <p>
+                    - Add toggle feature for accordion content.
+                    <br />
+                    - Updated Documentation.
+                  </p>
+
+                  <b>
+                    July 9, 2014 - v 1.0.0</b>
+                  <br />
+                  <p>
+                    - Initial Release.
+                  </p>
+
+                </div>
+
+              </section>
+
+              <section id="credits">
+                <div class="page-header">
+                  <h3>Sources and Credits</h3>
+                  <hr class="notop">
+                </div>
+
+                <ol>
+                  <li>
+                    <a href="https://www.jquery.com/">jQuery Plugin</a><br>
+                  </li>
+                  <li>
+                    <a href="fontawesome.io/">Font Awesome</a><br>
+                  </li>
+                </ol>
+
+              </section>
+
+              <!-- Our Template & Themes Section  -->
+
+              <section id="theme_template_section" class="doc-section">
+                <h2 class="section-title">Our Themes & Templates</h2>
+
+                <div id="wordpress_themes" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">WordPress Themes</h3>
+                      <ol class="our-products list" id="bwl_wp_themes"></ol>
                     </div>
-                    <!--//icon-holder-->
-                    <div class="content text-light">
-                      <h4 class="callout-title text-light">Important Note:</h4>
-                      <p>If you modified any files of plugin, please take a backup before update all files and folder.</p>
+                  </div>
+                </div>
+
+                <div id="wordpress_plugins" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">WordPress Plugins</h3>
+                      <ol class="our-products list" id="bwl_wp_plugins"></ol>
                     </div>
-                    <!--//content-->
-                  </div>
-                  <!--//callout-block-->
-                </div>
-
-              </div>
-
-
-            </section>
-
-            <section id="changelog">
-              <div class="page-header">
-                <h3>Change Log</h3><hr class="notop"></div>
-
-              <div>
-
-                <b>2023, October 02 - v 1.1.4</b>
-                <br/>
-                <p>
-                  - Improved Plugin code.<br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>August 10, 2018 -  v 1.1.1</b>
-                <br/>
-                <p>
-                  - Added option to search only accordion title.<br/>
-                  - Added option to display suggestion box bottom of search box.<br/>
-                  - Added option to query string search.<br/>
-                  - Improved Plugin code.<br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>March 11, 2018 -  v 1.1.0</b>
-                <br/>
-                <p>
-                  - Added option to keep open all rows of accordion.<br/>
-                  - Added option to keep open only even rows of accordion.<br/>
-                  - Added option to keep open only odd rows of accordion.<br/>
-                  - Added option to keep open custom rows of accordion.<br/>
-                  - Improved Plugin code.<br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>January 05, 2018 -  v 1.0.9</b>
-                <br/>
-                <p>
-                  - Improved Plugin code.<br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>May 21, 2016 -  v 1.0.8</b>
-                <br/>
-                <p>
-                  - Fixed pagination box background issue.<br/>
-                  - Fixed custom theme issue for multiple accordion in a page.
-                  <br/>
-                  - Improved Plugin code.<br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>May 19, 2016 -  v 1.0.7</b>
-                <br/>
-                <p>
-                  - Fixed search results counter issue.<br/>
-                  - Improved responsive layout.
-                  <br/>
-                  - Added custom theme setup option.
-                  <br/>
-                  - Improved Plugin code.<br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>January 30, 2016 - v 1.0.6</b>
-                <br/>
-                <p>
-                  - Added Expand all/ Collapse All Button.
-                  <br/>
-                  - Added All closed accordion feature.
-                  <br/>
-                  - Added 3 new navigation box type.
-                  <br/>
-                  - Added 4 new navigation icon type.
-                  <br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>
-                  May 5, 2015 - v 1.0.5</b>
-                <br/>
-                <p>
-                  - Fixed live search text
-                  <strong>Highlight Coloring</strong>
-                  issue for Chrome/Safari/Opera Browswer.
-                  <br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>
-                  April 26, 2015 - v 1.0.4</b>
-                <br/>
-                <p>
-                  - Fixed live search issue for link(anchor) tag.
-                  <br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>
-                  March 22, 2015 - v 1.0.3</b>
-                <br/>
-                <p>
-                  - Added Pagination Support for long lists of Accordion contents.
-                  <br/>
-                  - Added Easy clear button for small screen.<br/>
-                  - Updated Font Awesome stylesheet.<br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>
-                  October 16, 2014 - v 1.0.2</b>
-                <br/>
-                <p>
-                  - Added Highlight search keyword both accordion heading and content.
-                  <br/>
-                  - Added Custom highlight background and font color feature.
-                  <br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>
-                  July 18, 2014 - v 1.0.1</b>
-                <br/>
-                <p>
-                  - Add toggle feature for accordion content.
-                  <br/>
-                  - Updated Documentation.
-                </p>
-
-                <b>
-                  July 9, 2014 - v 1.0.0</b>
-                <br/>
-                <p>
-                  - Initial Release.
-                </p>
-
-              </div>
-
-            </section>
-
-            <section id="credits">
-              <div class="page-header">
-                <h3>Sources and Credits</h3><hr class="notop"></div>
-
-              <ol>
-                <li>
-                  <a href="https://www.jquery.com/">jQuery Plugin</a><br></li>
-                <li>
-                  <a href="fontawesome.io/">Font Awesome</a><br></li>
-              </ol>
-
-            </section>
-
-            <!-- Our Template & Themes Section  -->
-
-            <section id="theme_template_section" class="doc-section">
-              <h2 class="section-title">Our Themes & Templates</h2>
-
-              <div id="wordpress_themes" class="section-block">
-                <div class="row">
-                  <div class="col-md-12 col-12">
-                    <h3 class="block-title">WordPress Themes</h3>
-                    <ol class="our-products list" id="bwl_wp_themes"></ol>
                   </div>
                 </div>
-              </div>
 
-              <div id="wordpress_plugins" class="section-block">
-                <div class="row">
-                  <div class="col-md-12 col-12">
-                    <h3 class="block-title">WordPress Plugins</h3>
-                    <ol class="our-products list" id="bwl_wp_plugins"></ol>
+                <div id="html5_templates" class="section-block">
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+                      <h3 class="block-title">HTML5 Themes</h3>
+                      <ol class="our-products list" id="bwl_html_templates"></ol>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </section>
 
-              <div id="html5_templates" class="section-block">
-                <div class="row">
-                  <div class="col-md-12 col-12">
-                    <h3 class="block-title">HTML5 Themes</h3>
-                    <ol class="our-products list" id="bwl_html_templates"></ol>
-                  </div>
-                </div>
-              </div>
-            </section>
 
+            </div>
 
           </div>
 
         </div>
-
+        <!-- doc-body-->
       </div>
-      <!--//doc-body-->
+      <!-- container-->
+
     </div>
-    <!--//container-->
-
+    <!-- doc-wrapper-->
   </div>
-  <!--//doc-wrapper-->
-</div>
 
 
-<footer id="footer" class="footer text-center">
-  <div
-    class="container">
-    <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-    <small class="copyright">Designed with
-      <i class="fas fa-heart"></i>
-      by
-      <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>
-      for developers</small>
+  <footer id="footer" class="footer text-center">
+    <div class="container">
+      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+      <small class="copyright">Designed with
+        <i class="fas fa-heart"></i>
+        by
+        <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>
+        for developers</small>
 
-  </div>
-  <!--//container-->
-</footer>
-<!--//footer-->
+    </div>
+    <!-- container-->
+  </footer>
+  <!-- footer-->
 
 
-<a id="backTop">Back To Top</a>
+  <a id="backTop">Back To Top</a>
 
-<!-- Main Javascript -->
-<script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/all.min.js"></script>
-<script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/main.js"></script>
-<script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/products.js"></script></body></html>
+  <!-- Main Javascript -->
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/all.min.js"></script>
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/main.js"></script>
+  <script type="text/javascript" src="https://xenioushk.github.io/bwl-static-assets/doc-assets/js/products.js"></script>
+</body>
+
+</html>
